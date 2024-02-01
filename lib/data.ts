@@ -1,6 +1,7 @@
 import React from "react";
 import { CgWorkAlt } from "react-icons/cg";
 import { FaReact } from "react-icons/fa";
+import { SiKotlin } from "react-icons/si";
 import { LuGraduationCap } from "react-icons/lu";
 import corpcommentImg from "@/public/corpcomment.png";
 import rmtdevImg from "@/public/rmtdev.png";
@@ -58,6 +59,22 @@ export const experiencesData = [
     icon: React.createElement(FaReact),
     date: "2021 - present",
   },
+  {
+    title: "Android Developer",
+    location: "Nairobi KE",
+    description:
+      "I'm now a full-stack android developer working as a freelancer. My stack includes Firebase, Appwrite, Jetpack Compose and Kotlin. I'm open to full-time opportunities.",
+    icon: React.createElement(SiKotlin),
+    date: "2021 - present",
+  },
+  {
+    title: "Backend Developer",
+    location: "Nairobi KE",
+    description:
+      "I'm now a full-stack android developer working as a freelancer. My stack includes Kotlin, PostgreSQL, MongoDB, AppWrite, Ktor. I'm open to full-time opportunities.",
+    icon: React.createElement(SiKotlin),
+    date: "2021 - present",
+  }
 ] as const;
 
 export const projectsData = [
@@ -80,6 +97,13 @@ export const projectsData = [
     description:
       "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
     tags: ["React", "Next.js", "SQL", "Tailwind", "Framer"],
+    imageUrl: wordanalyticsImg,
+  },
+  {
+    title: "Instagram App",
+    description:
+      "An instagram clone both web app and android app that extended my thinking in creating world platform just to gain more expertise.",
+    tags: ["React", "Next.js","Ktor", "PostgreSQL", "Tailwind", "MongoDB", "Kotlin", "Compose"],
     imageUrl: wordanalyticsImg,
   },
 ] as const;

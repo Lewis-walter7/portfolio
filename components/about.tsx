@@ -19,9 +19,7 @@ export default function About() {
     >
       <SectionHeading>About me</SectionHeading>
       <p className="mb-3">
-      I am a dynamic and ambitious individual currently navigating the world of web and Android development. Despite being at the first-year level in my  <span className="font-medium">Computer Science studies</span>, I have already delved into the practical aspects of my field, showcasing a passion for technology and programming
-        I decided to pursue my
-        passion for programming. I enrolled in a coding bootcamp and learned{" "}
+      I am a dynamic and ambitious individual currently navigating the world of web and Android development. Despite being at the first-year level in my  <span className="font-medium">Computer Science studies</span>, I have already delved into the practical aspects of my field, showcasing a passion for technology and programming. I enrolled in a coding bootcamp and learned{" "}
         <span className="font-medium">full-stack web development</span>.{" "}
         <span className="italic">My favorite part of programming</span> is the
         problem-solving aspect. I <span className="underline">love</span> the
