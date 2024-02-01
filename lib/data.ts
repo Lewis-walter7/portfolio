@@ -6,6 +6,7 @@ import { LuGraduationCap } from "react-icons/lu";
 import corpcommentImg from "@/public/corpcomment.png";
 import rmtdevImg from "@/public/rmtdev.png";
 import wordanalyticsImg from "@/public/wordanalytics.png";
+import instagram from "@/public/instagram.png";
 
 export const links = [
   {
@@ -71,7 +72,7 @@ export const experiencesData = [
     title: "Backend Developer",
     location: "Nairobi KE",
     description:
-      "I'm now a full-stack android developer working as a freelancer. My stack includes Kotlin, PostgreSQL, MongoDB, AppWrite, Ktor. I'm open to full-time opportunities.",
+      "I'm now a full-stack android developer working as a freelancer. My stack includes Kotlin, MySQL, PostgreSQL, MongoDB, AppWrite, Ktor. I'm open to full-time opportunities.",
     icon: React.createElement(SiKotlin),
     date: "2021 - present",
   }
@@ -83,14 +84,14 @@ export const projectsData = [
     description:
       "Am working on this project to give people ideas and expand their knowledge on Oceans and water bodies resulting to water bodies conservaton.",
     tags: ["Kotlin", "Firebase", "Compose", "RooMDB"],
-    imageUrl: corpcommentImg,
+    imageUrl: rmtdevImg,
   },
   {
     title: "M-pesa App",
     description:
       "Worked on this project to showcase my ability to write code that follows clean architecture.",
     tags: ["Kotlin", "Firebase", "RoomDB", "Compose", "Appwrite"],
-    imageUrl: rmtdevImg,
+    imageUrl: corpcommentImg,
   },
   {
     title: "Word Analytics",
@@ -104,7 +105,7 @@ export const projectsData = [
     description:
       "An instagram clone both web app and android app that extended my thinking in creating world platform just to gain more expertise.",
     tags: ["React", "Next.js","Ktor", "PostgreSQL", "Tailwind", "MongoDB", "Kotlin", "Compose"],
-    imageUrl: wordanalyticsImg,
+    imageUrl: instagram,
   },
 ] as const;
 
