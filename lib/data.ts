@@ -7,6 +7,7 @@ import corpcommentImg from "@/public/corpcomment.png";
 import rmtdevImg from "@/public/rmtdev.png";
 import wordanalyticsImg from "@/public/wordanalytics.png";
 import instagram from "@/public/instagram.png";
+import artyfact from "@/public/artyfact.png";
 
 export const links = [
   {
@@ -106,6 +107,13 @@ export const projectsData = [
       "An instagram clone both web app and android app that extended my thinking in creating world platform just to gain more expertise.",
     tags: ["React", "Next.js","Ktor", "PostgreSQL", "Tailwind", "MongoDB", "Kotlin", "Compose"],
     imageUrl: instagram,
+  },
+  {
+    title: "Artyfact App",
+    description:
+      "Artyfact is a web app that showcases artyfacts for clients worldwide at cheaper prices leading to maximum authenticity.",
+    tags: ["React", "Next.js", "Tailwind", "MongoDB"],
+    imageUrl: artyfact,
   },
 ] as const;
 
