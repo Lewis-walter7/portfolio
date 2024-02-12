@@ -7,6 +7,7 @@ import ThemeSwitch from "@/components/theme-switch";
 import ThemeContextProvider from "@/context/theme-context";
 import { Toaster } from "react-hot-toast";
 import Head from "next/head";
+import Script from "next/script";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -23,15 +24,17 @@ export default function RootLayout({
   return (
     <html lang="en" className="!scroll-smooth">
       <Head>
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-JV8Z44YFT5"></script>
-        <script dangerouslySetInnerHTML={{
-          __html: `
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', 'G-JV8Z44YFT5');
-          `
-        }} />
+        <script async src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}`}></script>
+        <Script strategy="lazyOnload">
+        {`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', '${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}',{
+          page_path: window.location.pathname,
+          `}
+        </Script>
+
       </Head>
       <body
         className={`${inter.className} bg-gray-50 text-gray-950 relative pt-28 sm:pt-36 dark:bg-gray-900 dark:text-gray-50 dark:text-opacity-90`}
