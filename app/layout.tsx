@@ -23,7 +23,7 @@ export default function RootLayout({
   return (
     <html lang="en" className="!scroll-smooth">
       <Head>
-        <script src="https://www.googletagmanager.com/gtag/js?id=G-JV8Z44YFT5"></script>
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-JV8Z44YFT5"></script>
         <script dangerouslySetInnerHTML={{
           __html: `
             window.dataLayer = window.dataLayer || [];
