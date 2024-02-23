@@ -23,8 +23,8 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className="!scroll-smooth">
-       <Script async src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}`}/>
-       <Script strategy="lazyOnload">
+       <Script id="my-script" async src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}`}/>
+       <Script id="hello" strategy="lazyOnload">
         {`
           window.dataLayer = window.dataLayer || [];
           function gtag(){dataLayer.push(arguments);}
