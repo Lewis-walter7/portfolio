@@ -130,7 +130,6 @@ export const skillsData = [
   "Prisma",
   "MongoDB",
   "Ktor",
-  "GraphQL",
   "Express",
   "PostgreSQL",
   "JUnit",
