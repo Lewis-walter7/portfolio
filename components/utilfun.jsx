@@ -2,7 +2,7 @@ import isFirstCharVowel from '@/context/getFirstChar';
 import { useState, useEffect } from 'react';
 
 const TypingEffect = () => {
-  const words = ["Android Developer", "Web Developer", "Software Engineer"];
+  const words = ["Android Developer", "Web Developer", "Cyber Security Eng."];
  
   const [currentWordIndex, setCurrentWordIndex] = useState(0);
   const [displayText, setDisplayText] = useState('');
