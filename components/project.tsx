@@ -44,7 +44,7 @@ export default function Project({
           <p className="mt-2 leading-relaxed text-gray-700 dark:text-white/70">
             {description}
           </p>
-          <ul className="flex flex-wrap mt-4 gap-2 sm:mt-auto">
+          <ul className="flex flex-wrap my-4 gap-2 sm:mt-auto">
             {tags.map((tag, index) => (
               <li
                 className="bg-black/[0.7] px-3 py-1 text-[0.7rem] uppercase tracking-wider text-white rounded-full dark:text-white/70"
@@ -55,14 +55,13 @@ export default function Project({
             ))}
           </ul>
           {link && (
-            <a
-              href={link}
-              target="_blank"
+            <button
+              onClick={() => window.open(link, "_blank")}
               rel="noopener noreferrer"
-              className="text-blue-600 underline"
+              className="bg-rose-500 text-white px-4 py-2 mt-4 rounded-full hover:bg-rose-600 transition-colors"
             >
               View Project
-            </a>
+            </button>
           )}
         </div>
 
