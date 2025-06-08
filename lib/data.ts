@@ -3,11 +3,6 @@ import { CgWorkAlt } from "react-icons/cg";
 import { FaReact } from "react-icons/fa";
 import { SiKotlin } from "react-icons/si";
 import { LuGraduationCap } from "react-icons/lu";
-import corpcommentImg from "@/public/corpcomment.png";
-import rmtdevImg from "@/public/rmtdev.png";
-import wordanalyticsImg from "@/public/wordanalytics.png";
-import jvrtours from "@/public/jvrtours.png";
-import artyfact from "@/public/artyfact.png";
 import { ProjectProps } from "@/components/project";
 
 export const links = [
@@ -86,28 +81,28 @@ export const projectsData: ProjectProps[] = [
     description:
       "Am working on this project to give people ideas and expand their knowledge on Oceans and water bodies resulting to water bodies conservaton.",
     tags: ["Kotlin", "Firebase", "Compose", "RooMDB"],
-    imageUrl: rmtdevImg,
+    imageUrl: '/rmtdevImg.png',
   },
   {
     title: "M-pesa App",
     description:
       "Worked on this project to showcase my ability to write code that follows clean architecture.",
     tags: ["Kotlin", "Firebase", "RoomDB", "Compose", "Appwrite"],
-    imageUrl: corpcommentImg,
+    imageUrl: '/corpcommentImg.png',
   },
   {
     title: "Word Analytics",
     description:
       "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
     tags: ["React", "Next.js", "SQL", "Tailwind", "Framer"],
-    imageUrl: wordanalyticsImg,
+    imageUrl: '/wordanalyticsImg.png',
   },
   {
     title: "JvrTours App",
     description:
       "An agency that offers travelers various tours and excursions with destinations all over the world. Browse our website to find your dream tour!",
     tags: ["React", "Next.js", "Tailwind", "MongoDB",],
-    imageUrl: jvrtours,
+    imageUrl: '/jvrtours.png',
     link: "https://jvrtourss.vercel.app"
   },
   {
@@ -115,7 +110,7 @@ export const projectsData: ProjectProps[] = [
     description:
       "Artyfact is a web app that showcases artyfacts for clients worldwide at cheaper prices leading to maximum authenticity.",
     tags: ["React", "Next.js", "Tailwind", "MongoDB"],
-    imageUrl: artyfact,
+    imageUrl: '/artyfact.png',
   },
 ]
 
