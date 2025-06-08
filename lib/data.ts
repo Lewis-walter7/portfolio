@@ -117,7 +117,7 @@ export const projectsData: ProjectProps[] = [
     tags: ["React", "Next.js", "Tailwind", "MongoDB"],
     imageUrl: artyfact,
   },
-] as const;
+]
 
 export const skillsData = [
   "HTML",
