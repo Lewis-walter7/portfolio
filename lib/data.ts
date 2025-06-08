@@ -81,21 +81,21 @@ export const projectsData: ProjectProps[] = [
     description:
       "Am working on this project to give people ideas and expand their knowledge on Oceans and water bodies resulting to water bodies conservaton.",
     tags: ["Kotlin", "Firebase", "Compose", "RooMDB"],
-    imageUrl: '/rmtdevImg.png',
+    imageUrl: '/rmtdev.png',
   },
   {
     title: "M-pesa App",
     description:
       "Worked on this project to showcase my ability to write code that follows clean architecture.",
     tags: ["Kotlin", "Firebase", "RoomDB", "Compose", "Appwrite"],
-    imageUrl: '/corpcommentImg.png',
+    imageUrl: '/corpcomment.png',
   },
   {
     title: "Word Analytics",
     description:
       "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
     tags: ["React", "Next.js", "SQL", "Tailwind", "Framer"],
-    imageUrl: '/wordanalyticsImg.png',
+    imageUrl: '/wordanalytics.png',
   },
   {
     title: "JvrTours App",
