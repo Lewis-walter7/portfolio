@@ -6,8 +6,9 @@ import { LuGraduationCap } from "react-icons/lu";
 import corpcommentImg from "@/public/corpcomment.png";
 import rmtdevImg from "@/public/rmtdev.png";
 import wordanalyticsImg from "@/public/wordanalytics.png";
-import instagram from "@/public/instagram.png";
+import jvrtours from "@/public/jvrtours.png";
 import artyfact from "@/public/artyfact.png";
+import { ProjectProps } from "@/components/project";
 
 export const links = [
   {
@@ -79,7 +80,7 @@ export const experiencesData = [
   }
 ] as const;
 
-export const projectsData = [
+export const projectsData: ProjectProps[] = [
   {
     title: "Ocean Pulse",
     description:
@@ -102,11 +103,12 @@ export const projectsData = [
     imageUrl: wordanalyticsImg,
   },
   {
-    title: "Instagram App",
+    title: "JvrTours App",
     description:
-      "An instagram clone both web app and android app that extended my thinking in creating world platform just to gain more expertise.",
-    tags: ["React", "Next.js","Ktor", "PostgreSQL", "Tailwind", "MongoDB", "Kotlin", "Compose"],
-    imageUrl: instagram,
+      "An agency that offers travelers various tours and excursions with destinations all over the world. Browse our website to find your dream tour!",
+    tags: ["React", "Next.js", "Tailwind", "MongoDB",],
+    imageUrl: jvrtours,
+    link: "https://jvrtourss.vercel.app"
   },
   {
     title: "Artyfact App",

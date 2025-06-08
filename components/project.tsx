@@ -5,14 +5,22 @@ import { projectsData } from "@/lib/data";
 import Image from "next/image";
 import { motion, useScroll, useTransform } from "framer-motion";
 
-type ProjectProps = (typeof projectsData)[number];
+export interface ProjectProps {
+  title: string;
+  description: string;
+  tags: readonly string[];
+  imageUrl: string;
+  link?: string;
+}
 
 export default function Project({
   title,
   description,
   tags,
   imageUrl,
+  link
 }: ProjectProps) {
+
   const ref = useRef<HTMLDivElement>(null);
   const { scrollYProgress } = useScroll({
     target: ref,
@@ -46,6 +54,16 @@ export default function Project({
               </li>
             ))}
           </ul>
+          {link && (
+            <a
+              href={link}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-blue-600 underline"
+            >
+              View Project
+            </a>
+          )}
         </div>
 
         <Image
