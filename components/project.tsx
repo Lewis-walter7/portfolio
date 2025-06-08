@@ -8,7 +8,7 @@ import { motion, useScroll, useTransform } from "framer-motion";
 export interface ProjectProps {
   title: string;
   description: string;
-  tags: readonly string[];
+  tags: string[];
   imageUrl: string;
   link?: string;
 }
