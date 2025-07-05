@@ -101,6 +101,7 @@ export const projectsData: ProjectProps[] = [
       "A stunning flower coded using css to express high CSS skills.",
     tags: ["CSS", "HTML", "JS"],
     imageUrl: flower,
+    link: "https://lewis-mj.vercel.app/"
   },
   {
     title: "JvrTours App",
