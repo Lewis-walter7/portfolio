@@ -5,7 +5,7 @@ import { SiKotlin } from "react-icons/si";
 import { LuGraduationCap } from "react-icons/lu";
 import corpcommentImg from "@/public/corpcomment.png";
 import rmtdevImg from "@/public/rmtdev.png";
-import wordanalyticsImg from "@/public/wordanalytics.png";
+import flower from "@/public/flower.png";
 import jvrtours from "@/public/jvrtours.png";
 import artyfact from "@/public/artyfact.png";
 import { ProjectProps } from "@/components/project";
@@ -96,11 +96,11 @@ export const projectsData: ProjectProps[] = [
     imageUrl: corpcommentImg,
   },
   {
-    title: "Word Analytics",
+    title: "Flower",
     description:
-      "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
-    tags: ["React", "Next.js", "SQL", "Tailwind", "Framer"],
-    imageUrl: wordanalyticsImg,
+      "A stunning flower coded using css to express high CSS skills.",
+    tags: ["CSS", "HTML", "JS"],
+    imageUrl: flower,
   },
   {
     title: "JvrTours App",
