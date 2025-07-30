@@ -83,6 +83,30 @@ export const experiencesData = [
 
 export const projectsData: ProjectProps[] = [
   {
+    title: "Rank Rover",
+    description:
+      "This is an SEO tool for tracking rankings, auditing websites, and monitoring competitors to boost organic search visibility.",
+    tags: ["NestJS", "Next.js", "Tailwind", "TypeScript", "Prisma", "MongoDB"],
+    imageUrl: rankrover,
+    link: "https://rankrover.vercel.app"
+  },
+  {
+    title: "JvrTours App",
+    description:
+      "An agency that offers travelers various tours and excursions with destinations all over the world. Browse our website to find your dream tour!",
+    tags: ["React", "Next.js", "Tailwind", "MongoDB",],
+    imageUrl: jvrtours,
+    link: "https://jvrtourss.vercel.app"
+  },
+  {
+    title: "Flower",
+    description:
+      "A stunning flower coded using css to express high CSS skills.",
+    tags: ["CSS", "HTML", "JS"],
+    imageUrl: flower,
+    link: "https://lewis-mj.vercel.app/"
+  },
+  {
     title: "Ocean Pulse",
     description:
       "Am working on this project to give people ideas and expand their knowledge on Oceans and water bodies resulting to water bodies conservaton.",
@@ -97,36 +121,12 @@ export const projectsData: ProjectProps[] = [
     imageUrl: corpcommentImg,
   },
   {
-    title: "Flower",
-    description:
-      "A stunning flower coded using css to express high CSS skills.",
-    tags: ["CSS", "HTML", "JS"],
-    imageUrl: flower,
-    link: "https://lewis-mj.vercel.app/"
-  },
-  {
-    title: "JvrTours App",
-    description:
-      "An agency that offers travelers various tours and excursions with destinations all over the world. Browse our website to find your dream tour!",
-    tags: ["React", "Next.js", "Tailwind", "MongoDB",],
-    imageUrl: jvrtours,
-    link: "https://jvrtourss.vercel.app"
-  },
-  {
     title: "Artyfact App",
     description:
       "Artyfact is a web app that showcases artyfacts for clients worldwide at cheaper prices leading to maximum authenticity.",
     tags: ["React", "Next.js", "Tailwind", "MongoDB"],
     imageUrl: artyfact,
   },
-  {
-    title: "Rank Rover",
-    description:
-      "This is an SEO tool for tracking rankings, auditing websites, and monitoring competitors to boost organic search visibility.",
-    tags: ["NestJS", "Next.js", "Tailwind", "TypeScript", "Prisma", "MongoDB"],
-    imageUrl: rankrover,
-    link: "https://rankrover.vercel.app"
-  }
 ]
 
 export const skillsData = [
@@ -142,6 +142,7 @@ export const skillsData = [
   "Prisma",
   "MongoDB",
   "Ktor",
+  "NestJS",
   "Express",
   "PostgreSQL",
   "JUnit",
