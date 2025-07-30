@@ -122,7 +122,7 @@ export const projectsData: ProjectProps[] = [
   {
     title: "Rank Rover",
     description:
-      "RankRover is an SEO analytics tool that helps users track website rankings, audit performance, monitor competitors, and optimize keywords to boost search visibility and drive organic growth.",
+      "RankRover is an SEO tool for tracking rankings, auditing websites, and monitoring competitors to boost organic search visibility.",
     tags: ["React", "Next.js", "TypeScript", "Tailwind", "Prisma", "MongoDB", "NestJS"],
     imageUrl: rankrover,
     link: "https://rankrover.vercel.app"
