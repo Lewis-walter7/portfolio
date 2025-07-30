@@ -7,7 +7,7 @@ export default function Footer() {
         &copy; 2024 Lewis. All rights reserved.
       </small>
       <p className="text-xs">
-        <span className="font-semibold">About this website: Build with Next js</span>
+        <span className="font-semibold">About this website: Build with Love ❤️</span>
       </p>
     </footer>
   );
