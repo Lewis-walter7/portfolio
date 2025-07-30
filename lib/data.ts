@@ -8,6 +8,7 @@ import rmtdevImg from "@/public/rmtdev.png";
 import flower from "@/public/flower.png";
 import jvrtours from "@/public/jvrtours.png";
 import artyfact from "@/public/artyfact.png";
+import rankrover from "@/public/rankrover.png";
 import { ProjectProps } from "@/components/project";
 
 export const links = [
@@ -118,6 +119,14 @@ export const projectsData: ProjectProps[] = [
     tags: ["React", "Next.js", "Tailwind", "MongoDB"],
     imageUrl: artyfact,
   },
+  {
+    title: "Rank Rover",
+    description:
+      "RankRover is an SEO analytics tool that helps users track website rankings, audit performance, monitor competitors, and optimize keywords to boost search visibility and drive organic growth.",
+    tags: ["React", "Next.js", "TypeScript", "Tailwind", "Prisma", "MongoDB", "NestJS"],
+    imageUrl: rankrover,
+    link: "https://rankrover.vercel.app"
+  }
 ]
 
 export const skillsData = [
