@@ -94,7 +94,7 @@ export default function Intro() {
 
         <a
           className="bn31"
-          href="/Lewis_Indusa_cv.pdf"
+          href="/LewisIndusa.pdf"
           download
         >
           <span className="bn31span">
