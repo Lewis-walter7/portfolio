@@ -109,7 +109,7 @@ export const projectsData: ProjectProps[] = [
   {
     title: "Flux Chess",
     description:
-      "Flux Chess is a platform that teaches players advanced chess strategies, enhances problem-solving skills, and encourages critical thinking through interactive games and challenges.",
+      "Flux Chess teaches chess tactics and strategies, fostering analytical thinking and decision-making through hands-on, interactive game experiences.",
     tags: ["React", "Next.js", "Tailwind", "PostgreSQL",],
     imageUrl: fluxchess,
     link: "https://fluxchess.vercel.app/"
