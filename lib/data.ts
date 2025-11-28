@@ -4,7 +4,7 @@ import { FaReact } from "react-icons/fa";
 import { SiKotlin } from "react-icons/si";
 import { LuGraduationCap } from "react-icons/lu";
 import corpcommentImg from "@/public/corpcomment.png";
-import rmtdevImg from "@/public/rmtdev.png";
+import fluxchess from "@/public/fluxchess.png";
 import flower from "@/public/flower.png";
 import jvrtours from "@/public/jvrtours.png";
 import artyfact from "@/public/artyfact.png";
@@ -107,11 +107,11 @@ export const projectsData: ProjectProps[] = [
     link: "https://lewis-mj.vercel.app/"
   },
   {
-    title: "Ocean Pulse",
+    title: "Flux Chess",
     description:
-      "Am working on this project to give people ideas and expand their knowledge on Oceans and water bodies resulting to water bodies conservaton.",
-    tags: ["Kotlin", "Firebase", "Compose", "RooMDB"],
-    imageUrl: rmtdevImg,
+      "Flux Chess is a platform that teaches players advanced chess strategies, enhances problem-solving skills, and encourages critical thinking through interactive games and challenges.",
+    tags: ["React", "Next.js", "Tailwind", "PostgreSQL",],
+    imageUrl: fluxchess,
   },
   {
     title: "M-pesa App",
