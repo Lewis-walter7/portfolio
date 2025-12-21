@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import React from "react";
-import'./custom.css';
+import './custom.css';
 import { motion } from "framer-motion";
 import Link from "next/link";
 import { BsArrowRight, BsLinkedin } from "react-icons/bs";
@@ -20,7 +20,7 @@ export default function Intro() {
     <section
       ref={ref}
       id="home"
-      className="mb-28 max-w-[50rem] text-center sm:mb-0 scroll-mt-[100rem]"
+      className="mb-28 max-w-[50rem] text-center sm:mb-0 scroll-mt-[100rem] -mt-20 sm:-mt-16"
     >
       <div className="flex items-center justify-center">
         <div className="relative">
@@ -59,21 +59,67 @@ export default function Intro() {
         </div>
       </div>
 
-      <motion.h1
-        className="mb-10 mt-4 px-4 text-2xl font-medium !leading-[1.5] sm:text-4xl"
+      <motion.div
+        className="mb-10 mt-4 px-4"
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
       >
-        <span className="font-bold">Hello, I'm Lewis.</span> I'm{" "}
-        <TypingEffect /> {" "}
-        <br></br>
-        <span className="font-bold">with 3 years</span> of experience. I enjoy
-        building <span className="italic">sites & apps</span>. My focus is{" "}
-        <span className="underline">Tech Space and Cyber Security</span>.
-      </motion.h1>
+        <h1 className="text-2xl font-medium !leading-[1.5] sm:text-4xl mb-4">
+          <span className="font-bold">Hello, I'm{" "}
+            <span className="bg-gradient-to-r from-blue-600 to-purple-600 dark:from-blue-400 dark:to-purple-400 bg-clip-text text-transparent">
+              Lewis
+            </span>
+          </span>
+        </h1>
+
+        <div className="text-xl sm:text-3xl font-semibold mb-4">
+          I'm <TypingEffect />
+        </div>
+
+        {/* Quick Stats Badges */}
+        <motion.div
+          className="flex flex-wrap items-center justify-center gap-3 mb-6"
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.3 }}
+        >
+          <div className="flex items-center gap-2 bg-white dark:bg-white/10 px-4 py-2 rounded-full border border-black/10 dark:border-white/20 shadow-sm">
+            <span className="text-2xl">🚀</span>
+            <span className="text-sm font-medium text-gray-700 dark:text-gray-300">
+              <span className="font-bold bg-gradient-to-r from-blue-600 to-purple-600 dark:from-blue-400 dark:to-purple-400 bg-clip-text text-transparent">4</span> Years
+            </span>
+          </div>
+          <div className="flex items-center gap-2 bg-white dark:bg-white/10 px-4 py-2 rounded-full border border-black/10 dark:border-white/20 shadow-sm">
+            <span className="text-2xl">💻</span>
+            <span className="text-sm font-medium text-gray-700 dark:text-gray-300">
+              <span className="font-bold bg-gradient-to-r from-blue-600 to-purple-600 dark:from-blue-400 dark:to-purple-400 bg-clip-text text-transparent">20+</span> Projects
+            </span>
+          </div>
+          <div className="flex items-center gap-2 bg-white dark:bg-white/10 px-4 py-2 rounded-full border border-black/10 dark:border-white/20 shadow-sm">
+            <span className="text-2xl">⚡</span>
+            <span className="text-sm font-medium text-gray-700 dark:text-gray-300">
+              <span className="font-bold bg-gradient-to-r from-blue-600 to-purple-600 dark:from-blue-400 dark:to-purple-400 bg-clip-text text-transparent">15+</span> Technologies
+            </span>
+          </div>
+        </motion.div>
+
+        <p className="text-base sm:text-lg text-gray-700 dark:text-gray-300 max-w-[600px] mx-auto">
+          Passionate about building{" "}
+          <span className="font-semibold bg-gradient-to-r from-blue-600 to-purple-600 dark:from-blue-400 dark:to-purple-400 bg-clip-text text-transparent">
+            innovative sites & apps
+          </span>
+          {" "}with focus on{" "}
+          <span className="relative inline-block">
+            <span className="relative z-10 font-semibold text-gray-900 dark:text-white">
+              Tech Space & Cyber Security
+            </span>
+            <span className="absolute bottom-0 left-0 w-full h-3 bg-blue-200 dark:bg-blue-900 -z-10 opacity-50"></span>
+          </span>
+        </p>
+      </motion.div>
 
       <motion.div
-        className="flex flex-col sm:flex-row items-center justify-center gap-2 px-4 text-lg font-medium"
+        className="flex flex-col sm:flex-row items-center justify-center gap-3 px-4 text-lg font-medium"
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{
@@ -82,7 +128,7 @@ export default function Intro() {
       >
         <Link
           href="#contact"
-          className="bn30"
+          className="group flex items-center gap-2 bg-gradient-to-r from-blue-600 to-purple-600 dark:from-blue-500 dark:to-purple-500 text-white px-7 py-3 rounded-full outline-none focus:scale-110 hover:scale-110 hover:shadow-lg active:scale-105 transition-all"
           onClick={() => {
             setActiveSection("Contact");
             setTimeOfLastClick(Date.now());
@@ -93,18 +139,16 @@ export default function Intro() {
         </Link>
 
         <a
-          className="bn31"
+          className="group flex items-center gap-2 bg-white dark:bg-white/10 text-gray-900 dark:text-white px-7 py-3 rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 transition-all cursor-pointer border border-black/10 dark:border-white/20 hover:shadow-lg"
           href="/LewisIndusa.pdf"
           download
         >
-          <span className="bn31span">
-            Download CV{" "}
-            <HiDownload className="opacity-60 group-hover:translate-y-1 transition" />
-          </span>
+          Download CV{" "}
+          <HiDownload className="opacity-60 group-hover:translate-y-1 transition" />
         </a>
 
         <a
-          className="bg-white p-4 text-gray-700 hover:text-gray-950 flex items-center gap-2 rounded-full focus:scale-[1.15] hover:scale-[1.15] active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
+          className="bg-white p-4 text-gray-700 hover:text-gray-950 flex items-center gap-2 rounded-full focus:scale-[1.15] hover:scale-[1.15] active:scale-105 transition cursor-pointer border border-black/10 dark:border-white/20 dark:bg-white/10 dark:text-white/60 hover:shadow-lg"
           href="https://www.linkedin.com/in/lewisindusa12/"
           target="_blank"
         >
@@ -112,7 +156,7 @@ export default function Intro() {
         </a>
 
         <a
-          className="bg-white p-4 text-gray-700 flex items-center gap-2 text-[1.35rem] rounded-full focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
+          className="bg-white p-4 text-gray-700 flex items-center gap-2 text-[1.35rem] rounded-full focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition cursor-pointer border border-black/10 dark:border-white/20 dark:bg-white/10 dark:text-white/60 hover:shadow-lg"
           href="https://github.com/Lewis-walter7"
           target="_blank"
         >
@@ -122,3 +166,4 @@ export default function Intro() {
     </section>
   );
 }
+

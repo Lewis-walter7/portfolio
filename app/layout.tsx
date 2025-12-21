@@ -1,6 +1,6 @@
 import { Analytics } from "@vercel/analytics/react"
 
-import Header from "@/components/header";
+import ConditionalHeader from "@/components/conditional-header";
 import "./globals.css";
 import { Inter } from "next/font/google";
 import ActiveSectionContextProvider from "@/context/active-section-context";
@@ -15,7 +15,7 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
   title: "Lewis | Personal Portfolio",
-  description: "Lewis is a full-stack developer with 3 years of experience.",
+  description: "Lewis is a full-stack developer with over 4 years of experience.",
 };
 
 export default function RootLayout({
@@ -25,8 +25,8 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className="!scroll-smooth">
-       <Script id="my-script" async src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}`}/>
-       <Script id="hello" strategy="lazyOnload">
+      <Script id="my-script" async src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}`} />
+      <Script id="hello" strategy="lazyOnload">
         {`
           window.dataLayer = window.dataLayer || [];
           function gtag(){dataLayer.push(arguments);}
@@ -34,7 +34,7 @@ export default function RootLayout({
           gtag('config', '${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}',{
           page_path: window.location.pathname,
           `}
-        </Script>
+      </Script>
       <body
         className={`${inter.className} bg-gray-50 text-gray-950 relative pt-28 sm:pt-36 dark:bg-gray-900 dark:text-gray-50 dark:text-opacity-90`}
       >
@@ -43,9 +43,9 @@ export default function RootLayout({
 
         <ThemeContextProvider>
           <ActiveSectionContextProvider>
-            <Header />
+            <ConditionalHeader />
             {children}
-            <Analytics/>
+            <Analytics />
             <Footer />
 
             <Toaster position="top-right" />
