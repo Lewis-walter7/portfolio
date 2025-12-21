@@ -7,6 +7,7 @@ import Link from "next/link";
 import clsx from "clsx";
 import { useActiveSectionContext } from "@/context/active-section-context";
 import { HiMenu, HiX } from "react-icons/hi";
+import Image from "next/image";
 
 export default function Header() {
   const { activeSection, setActiveSection, setTimeOfLastClick } =
@@ -73,9 +74,7 @@ export default function Header() {
         <div className="flex items-center justify-between px-4 py-4">
           {/* Logo and Brand */}
           <Link href="/#home" className="flex items-center gap-2">
-            <div className="w-8 h-8 bg-gradient-to-br from-blue-600 to-purple-600 rounded-lg flex items-center justify-center">
-              <span className="text-white font-bold text-lg">L</span>
-            </div>
+            <Image src="/logo.png" alt="Logo" width={24} height={24} />
             <span className="font-bold text-lg bg-gradient-to-r from-blue-600 to-purple-600 dark:from-blue-400 dark:to-purple-400 bg-clip-text text-transparent">
               Lewis Labs
             </span>

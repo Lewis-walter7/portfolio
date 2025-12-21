@@ -161,7 +161,7 @@ export default function About() {
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.9 }}
-        className="bg-gradient-to-r from-blue-600 to-purple-600 dark:from-blue-500 dark:to-purple-500 p-6 rounded-2xl text-center text-white shadow-lg"
+        className="bg-white dark:bg-white/5 p-6 rounded-2xl text-center text-white shadow-lg"
       >
         <p className="text-lg sm:text-xl font-semibold mb-2">
           🚀 Open to Full-Time Opportunities
