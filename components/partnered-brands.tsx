@@ -3,16 +3,13 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { partneredBrandsData } from "@/lib/data";
-import { useSectionInView } from "@/lib/hooks";
 import Image from "next/image";
 import brandPlaceholder from "@/public/brand-placeholder.png";
 
 export default function PartneredBrands() {
-    const { ref } = useSectionInView("Brands", 0.5);
 
     return (
         <section
-            ref={ref}
             id="brands"
             className="mb-28 sm:mb-40 scroll-mt-28 text-center"
         >
