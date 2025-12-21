@@ -9,12 +9,12 @@ import { motion } from "framer-motion";
 
 export default function ProjectsPage() {
     return (
-        <div className="min-h-screen pt-28 pb-20 px-4">
+        <div className="min-h-screen -mt-20 pb-20 px-4">
             <div className="max-w-[53rem] mx-auto">
                 {/* Back Button */}
                 <Link
                     href="/#projects"
-                    className="inline-flex items-center gap-2 text-gray-700 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white mb-8 transition-colors font-medium"
+                    className="inline-flex items-center gap-2 text-gray-700 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white mb-4 transition-colors font-medium"
                 >
                     <HiArrowLeft />
                     <span>Back to Home</span>
