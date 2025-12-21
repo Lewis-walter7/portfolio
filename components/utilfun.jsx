@@ -3,7 +3,7 @@ import { useState, useEffect } from 'react';
 
 const TypingEffect = () => {
   const words = ["Android Developer", "Web Developer", "Physicist"];
- 
+
   const [currentWordIndex, setCurrentWordIndex] = useState(0);
   const [displayText, setDisplayText] = useState('');
   const [identifier, setIdentifier] = useState('an');
@@ -42,17 +42,17 @@ const TypingEffect = () => {
 
     typeText();
 
-    if(!isFirstCharVowel(displayText)) {
+    if (!isFirstCharVowel(displayText)) {
       setIdentifier("a")
     }
     return () => {
       clearInterval(typingInterval);
       clearInterval(deletingInterval);
     };
-  }, [currentWordIndex]);
+  }, [currentWordIndex, displayText, words]);
 
   return (
-      <span className='font-bold'>{ titleword }</span>
+    <span className='font-bold'>{titleword}</span>
   );
 };
 

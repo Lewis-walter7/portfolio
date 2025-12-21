@@ -120,7 +120,7 @@ export default function Skills() {
                     transition-all duration-300
                     cursor-pointer
                   ">
-                    <skill.icon className={`text-lg bg-gradient-to-r ${category.gradient} bg-clip-text text-transparent group-hover:scale-110 transition-transform`} />
+                    <skill.icon className="text-lg text-gray-700 dark:text-gray-300 group-hover:scale-110 transition-transform" />
                     <span className="text-sm font-medium text-gray-800 dark:text-gray-200 text-center">
                       {skill.name}
                     </span>
