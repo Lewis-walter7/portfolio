@@ -12,6 +12,7 @@ export interface ProjectProps {
   tags: string[];
   imageUrl: StaticImageData;
   link?: string;
+  category?: string;
 }
 
 export default function Project({
