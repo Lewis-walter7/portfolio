@@ -235,3 +235,31 @@ export const partneredBrandsData = [
     logo: brandPlaceholder,
   },
 ] as const;
+
+export const learningData = [
+  {
+    name: "Docker & Kubernetes",
+    description: "Container orchestration and deployment",
+    progress: "Intermediate",
+    icon: "🐳"
+  },
+  {
+    name: "Cloud Computing",
+    description: "Cloud computing architecture and design",
+    progress: "Intermediate",
+    icon: "🔷"
+  },
+  {
+    name: "AWS",
+    description: "Cloud services and deployment",
+    progress: "Intermediate",
+    icon: "☁️"
+  },
+  {
+    name: "Rust",
+    description: "Systems programming language",
+    progress: "Beginner",
+    icon: "🦀"
+  },
+
+] as const;

@@ -1,8 +1,10 @@
 import isFirstCharVowel from '@/context/getFirstChar';
 import { useState, useEffect } from 'react';
 
+const words = ["Android Developer", "Web Developer", "Physicist"];
+
+
 const TypingEffect = () => {
-  const words = ["Android Developer", "Web Developer", "Physicist"];
 
   const [currentWordIndex, setCurrentWordIndex] = useState(0);
   const [displayText, setDisplayText] = useState('');
@@ -49,7 +51,7 @@ const TypingEffect = () => {
       clearInterval(typingInterval);
       clearInterval(deletingInterval);
     };
-  }, [currentWordIndex, displayText, words]);
+  }, [currentWordIndex]);
 
   return (
     <span className='font-bold'>{titleword}</span>

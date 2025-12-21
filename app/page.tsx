@@ -8,6 +8,7 @@ import Skills from "@/components/skills";
 import PartneredBrands from "@/components/partnered-brands";
 import GithubStats from "@/components/github-stats";
 import Testimonials from "@/components/testimonials";
+import CurrentlyLearning from "@/components/currently-learning";
 
 export default function Home() {
   return (
@@ -18,6 +19,7 @@ export default function Home() {
       <PartneredBrands />
       <Projects />
       <Skills />
+      <CurrentlyLearning />
       <GithubStats />
       <Experience />
       <Testimonials />
