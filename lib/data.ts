@@ -12,7 +12,7 @@ import rankrover from "@/public/rankrover.png";
 import citybossmotors from "@/public/citybossmotors.png";
 import citybossrealtors from "@/public/citybossrealtors.png";
 import { ProjectProps } from "@/components/project";
-import jvrtoursLogo from "@/public/partners/jvrtours.png";
+import phonemallexpress from "@/public/partners/phonemallexpress.png";
 import citybosslogo from "@/public/partners/citybosslogo.png";
 import brandPlaceholder from "@/public/brand-placeholder.png";
 
@@ -95,6 +95,23 @@ export const experiencesData = [
 ] as const;
 
 export const projectsData: ProjectProps[] = [
+  {
+    title: "PhoneMallExpress",
+    description:
+      "This is a website for PhoneMallExpress. It features a modern and responsive design, with a focus on user experience and ease of navigation.",
+    tags: ["React", "Next.js", "Vanilla CSS", "MongoDB",],
+    imageUrl: phonemallexpress,
+    link: "https://phonemallexpress.vercel.app",
+    category: "Web App"
+  },
+  // {
+  //   title: "MobiTower Electronics",
+  //   description: "This is a website for MobiTower Electronics. It features a modern and responsive design, with a focus on user experience and ease of navigation.",
+  //   tags: ["React", "Next.js", "Vanilla CSS", "MongoDB",],
+  //   imageUrl: mobitower,
+  //   link: "",
+  //   category: "Web App"
+  // },
   {
     title: "CityBoss Motors",
     description:
@@ -215,9 +232,9 @@ export const testimonialsData = [
 
 export const partneredBrandsData = [
   {
-    name: "JvrTours",
-    description: "Tour & Travel Agency",
-    logo: jvrtoursLogo,
+    name: "PhoneMallExpress",
+    description: "Electronics Selling Trademark Company",
+    logo: phonemallexpress,
   },
   {
     name: "CityBoss Motors",
@@ -258,7 +275,7 @@ export const learningData = [
   {
     name: "Rust",
     description: "Systems programming language",
-    progress: "Beginner",
+    progress: "Expert",
     icon: "🦀"
   },
 
