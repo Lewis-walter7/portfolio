@@ -16,6 +16,15 @@ import phonemallexpress from "@/public/partners/phonemallexpress.png";
 import citybosslogo from "@/public/partners/citybosslogo.png";
 import brandPlaceholder from "@/public/brand-placeholder.png";
 
+export type LearningProgress = "Beginner" | "Intermediate" | "Expert";
+
+export interface LearningItem {
+  name: string;
+  description: string;
+  progress: LearningProgress;
+  icon: string;
+}
+
 export const links = [
   {
     name: "Home",
@@ -253,7 +262,7 @@ export const partneredBrandsData = [
   },
 ] as const;
 
-export const learningData = [
+export const learningData: LearningItem[] = [
   {
     name: "Docker & Kubernetes",
     description: "Container orchestration and deployment",
@@ -279,4 +288,4 @@ export const learningData = [
     icon: "🦀"
   },
 
-] as const;
+];
