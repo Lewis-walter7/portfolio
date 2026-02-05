@@ -40,6 +40,11 @@ export const metadata = {
   icons: {
     icon: "/favicon.ico",
   },
+  verification: {
+    other: {
+      "msvalidate.01": "F80FEDEA69035F955BF8F70DE8737393",
+    },
+  },
 };
 
 export default function RootLayout({
@@ -57,7 +62,8 @@ export default function RootLayout({
           gtag('js', new Date());
           gtag('config', '${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}',{
           page_path: window.location.pathname,
-          `}
+          });
+        `}
       </Script>
       <body
         className={`${inter.className} bg-gray-50 text-gray-950 relative pt-28 sm:pt-36 dark:bg-gray-900 dark:text-gray-50 dark:text-opacity-90`}
