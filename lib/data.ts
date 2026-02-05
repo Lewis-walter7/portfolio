@@ -110,7 +110,7 @@ export const projectsData: ProjectProps[] = [
       "This is a website for PhoneMallExpress. It features a modern and responsive design, with a focus on user experience and ease of navigation.",
     tags: ["React", "Next.js", "Vanilla CSS", "MongoDB",],
     imageUrl: phonemallexpress,
-    link: "https://phonemallexpress.vercel.app",
+    link: "https://phonemallexpress.com",
     category: "Web App"
   },
   // {
