@@ -20,8 +20,8 @@ export const metadata = {
   description: "Lewis is a full-stack developer with over 4 years of experience.",
   tags: ["Full Stack", "Developer", "Software Engineer", "React", "Next.js", "Portfolio"],
   keywords: [...skillsData],
-  authors: [{ name: "Lewis INDUSA" }],
-  creator: "Lewis INDUSA",
+  authors: [{ name: "Lewis Indusa" }],
+  creator: "Lewis Indusa",
   metadataBase: new URL("https://lewisindusa.vercel.app"),
   openGraph: {
     title: "Lewis | Personal Portfolio",
@@ -35,7 +35,7 @@ export const metadata = {
     card: "summary_large_image",
     title: "Lewis | Personal Portfolio",
     description: "Lewis is a full-stack developer with over 4 years of experience.",
-    creator: "@LewisINDUSA",
+    creator: "@lewisindusa",
   },
   icons: {
     icon: "/favicon.ico",
