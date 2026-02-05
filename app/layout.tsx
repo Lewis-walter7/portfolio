@@ -11,11 +11,35 @@ import { Toaster } from "react-hot-toast";
 import Head from "next/head";
 import Script from "next/script";
 
+import { skillsData } from "@/lib/data";
+
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
   title: "Lewis | Personal Portfolio",
   description: "Lewis is a full-stack developer with over 4 years of experience.",
+  tags: ["Full Stack", "Developer", "Software Engineer", "React", "Next.js", "Portfolio"],
+  keywords: [...skillsData],
+  authors: [{ name: "Lewis INDUSA" }],
+  creator: "Lewis INDUSA",
+  metadataBase: new URL("https://lewisindusa.vercel.app"),
+  openGraph: {
+    title: "Lewis | Personal Portfolio",
+    description: "Lewis is a full-stack developer with over 4 years of experience.",
+    url: "https://lewisindusa.vercel.app",
+    siteName: "Lewis | Personal Portfolio",
+    locale: "en_US",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Lewis | Personal Portfolio",
+    description: "Lewis is a full-stack developer with over 4 years of experience.",
+    creator: "@LewisINDUSA",
+  },
+  icons: {
+    icon: "/favicon.ico",
+  },
 };
 
 export default function RootLayout({
