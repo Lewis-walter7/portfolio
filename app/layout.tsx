@@ -19,7 +19,17 @@ export const metadata = {
   title: "Lewis | Personal Portfolio",
   description: "Lewis is a full-stack developer with over 4 years of experience.",
   tags: ["Full Stack", "Developer", "Software Engineer", "React", "Next.js", "Portfolio"],
-  keywords: [...skillsData],
+  keywords: [
+    "Freelance Web Developer",
+    "Full Stack Engineer Kenya",
+    "Nairobi Software Developer",
+    "React Developer",
+    "Next.js Expert",
+    "Mobile App Developer",
+    "Android Developer",
+    "Web Design Kenya",
+    ...skillsData
+  ],
   authors: [{ name: "Lewis Indusa" }],
   creator: "Lewis Indusa",
   metadataBase: new URL("https://lewisindusa.vercel.app"),
@@ -52,6 +62,34 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    name: "Lewis Indusa",
+    url: "https://lewisindusa.vercel.app",
+    jobTitle: "Full Stack Developer",
+    sameAs: [
+      "https://github.com/Lewis-walter7",
+      "https://www.instagram.com/lewisindusa/",
+      "https://www.linkedin.com/in/lewisindusa12/",
+      "https://www.x.com/lewisindusa",
+      "https://www.facebook.com/lewisindusa12/"
+
+    ],
+    knowsAbout: [
+      "Web Development",
+      "Mobile App Development",
+      "React",
+      "Next.js",
+      "Kotlin",
+      "Android"
+    ],
+    alumniOf: {
+      "@type": "Organization",
+      name: "Coding Bootcamp"
+    }
+  };
+
   return (
     <html lang="en" className="!scroll-smooth">
       <Script id="my-script" async src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}`} />
@@ -65,6 +103,7 @@ export default function RootLayout({
           });
         `}
       </Script>
+      <Script id="json-ld" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
       <body
         className={`${inter.className} bg-gray-50 text-gray-950 relative pt-28 sm:pt-36 dark:bg-gray-900 dark:text-gray-50 dark:text-opacity-90`}
       >
