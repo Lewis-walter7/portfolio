@@ -51,6 +51,7 @@ export const metadata = {
     icon: "/favicon.ico",
   },
   verification: {
+    google: "YHDZufwHLqfdsp2O21-MVTfp0Np9Zn4wfWLI4NW_njs",
     other: {
       "msvalidate.01": "F80FEDEA69035F955BF8F70DE8737393",
     },
