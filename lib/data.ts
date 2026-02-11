@@ -12,7 +12,8 @@ import rankrover from "@/public/rankrover.png";
 import citybossmotors from "@/public/citybossmotors.png";
 import citybossrealtors from "@/public/citybossrealtors.png";
 import { ProjectProps } from "@/components/project";
-import phonemallexpress from "@/public/partners/phonemallexpress.png";
+import phonemallexpresss from "@/public/partners/phonemallexpresss.png";
+import phonemallexpress from "@/public/phonemallexpresss.png";
 import citybosslogo from "@/public/partners/citybosslogo.png";
 import brandPlaceholder from "@/public/brand-placeholder.png";
 
@@ -243,7 +244,7 @@ export const partneredBrandsData = [
   {
     name: "PhoneMallExpress",
     description: "Electronics Selling Trademark Company",
-    logo: phonemallexpress,
+    logo: phonemallexpresss,
   },
   {
     name: "CityBoss Motors",
